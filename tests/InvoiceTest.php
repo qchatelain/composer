@@ -8,9 +8,9 @@ final class InvoiceTest extends TestCase
 {
     public function testItSetVat(): void
     {
-        $invoiceLine = new InvoiceLine('Test', 300, 20);
+        $invoiceLine = new InvoiceLine('Test', 30, 20);
         $this->assertEquals(
-            300 + 300 * 0.2,
+            30 + 30 * 0.2,
             $invoiceLine->calculateTotal()
         );
     }
